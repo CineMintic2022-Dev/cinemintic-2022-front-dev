@@ -1,0 +1,39 @@
+/* Estandar */
+a {
+  color: white !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Class */
+.navbarBg {
+  background-color: #a4161a;
+}
+
+.optionsNavbar{
+  margin-left: 15vw;
+}
+
+.imgs {
+  align-items: center;
+}
+
+img {
+  object-fit: contain;
+}
+
+.iconCineMintic img {
+  max-width: 60px;
+}
+
+.textCineMintic img {
+  max-width: 140px;
+}
+
+.dropdown-menu a {
+  color: #a4161a !important;
+}
+
+.optionsImgs{
+  max-width: 40px;;
+}

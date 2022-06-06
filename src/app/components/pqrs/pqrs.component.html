@@ -1,0 +1,51 @@
+<div>
+    <!-- Slider movies -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img [src]='banner1' class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img [src]='banner2' class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img [src]='banner3' class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+<!-- PQRS Title-->
+<div class="background">
+    <p class="titleText">{{ "PREGUNTAS, QUEJAS O RECLAMOS" | translate }}</p>
+</div>
+
+<br>
+<br>
+
+<!-- PQRS Content -->
+<p class="titleText2">{{ "PARA NOSOTROS ES MUY IMPORTANTE TU OPINIÓN" | translate }}</p>
+<p class="contentText">{{ "A continuación digita todos los campos y enviamos tu pregunta, queja o reclamo, te contestaremos lo mas rapido posible y lo tendremos en cuenta en nuestros planes de mejora con el fin de darte siempre el mejor servicio." | translate }}</p>
+<br>  
+
+<form [formGroup]="form" novalidate>
+    <div class="form-group">
+      <label for="inputEmail1">{{ "Email" | translate }}</label>
+      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="{{ 'Ingrese Email' | translate }}" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputNombresApellidos">{{ "Nombres y Apellidos" | translate }}</label>
+      <input type="text" class="form-control" id="inputNombresApellidos" placeholder="{{ 'Ingrese Nombres y Apellidos' | translate }}" required>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">{{ "Mensaje" | translate }}</label>
+        <textarea class="form-control" id="formControlTextarea1" placeholder="{{ 'Ingrese texto descriptivo' | translate }}" rows="5" required></textarea>
+    </div>
+    <br>            
+        <button type="submit" class="buttonClick" (click)="onSubmit()" [disabled]="!form.valid">{{ "Enviar" | translate }}</button>
+</form>
+<br>            
+<br>            

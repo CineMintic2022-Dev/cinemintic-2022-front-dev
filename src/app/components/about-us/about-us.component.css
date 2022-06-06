@@ -1,0 +1,126 @@
+.carousel-item img {
+  max-height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.background {
+  background-color: #a4161a;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.titleText {
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0 !important;
+}
+
+/* Billboard */
+
+.billboardContainer {
+  padding: 30px 0 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.billboardCardContainer {
+  padding: 0 10px 0 10px;
+}
+
+.movieTitle {
+  background-color: #495057;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reserveBtn {
+  background-color: #a4161a;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.reserveBtn:hover {
+  background-color: #ba181b;
+}
+
+.imageMovieContainer {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.soonBtn {
+  background-color: #a4161a;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.infoContent {
+  height: 60%;
+  background: white;
+}
+
+.internalInfo {
+  float: left;
+  display: flex;
+  height: 100%;
+  width: 70%;
+}
+
+.infoTeamAside {
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+
+.aboutContent {
+  padding: 30px 70px 30px 70px;
+}
+.aboutContent img {
+  width: 100%;
+}
+
+.aboutText {
+  text-align: justify;
+  font-size: 30px;
+}
+.section-container {
+  background: #a4161a;
+  color: white;
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+}
+.container_item-user {
+  width: 200px;
+}
+.container_item-user img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 160px;
+  border: 10px solid #6C757D;
+}
+.row-team {
+  display: flex;
+  justify-content: space-between;
+}
+.our-team h3 {
+  font-weight: bold;
+}
+.our-team h2 {
+  margin-bottom: 100px;
+}

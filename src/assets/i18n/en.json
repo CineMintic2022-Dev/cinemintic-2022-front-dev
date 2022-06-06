@@ -1,0 +1,96 @@
+{
+  "NAVBAR": "NAVBAR",
+
+  "Idioma": "Language",
+  "Espanol": "Spanish",
+  "Ingles": "English",
+  "Cartelera": "Billboard",
+  "Proximamente": "Soon",
+  "Confiteria": "Confectionery",
+  "TarjetaPremium": "Premium Card",
+  "Perfil": "Profile",
+  "IniciarSesion": "Login",
+  "CerrarSesion": "Logout",
+  "Comapany": "Company",
+  "ParaTi": "For You",
+
+  "FOOTER": "FOOTER",
+
+  "SobreNosotros": "About Us",
+  "QuienesSomos": "Who Am I",
+  "PreguntasFrecuentes": "Frequent Questions",
+  "NuestrasRedes": "Our Networks",
+
+  "HOME PAGE": "HOME PAGE",
+
+  "CARTELERA": "BILLBOARD",
+  "ESTRENOS": "PREMIERES",
+  "RESERVAR": "RESERVE",
+  "PROXIMAMENTE": "COMING SOON",
+
+  "ACERCA DE": "ABOUT US",
+  "ABOUTINFO1": "The entertainment industry in recent years has had a rapid development, advances in science and technology have given a solid base for many fields among them the beautiful arts have become widespread in all social strata.Given that places such as cinemas, due to their great diffusion and influx has become the meeting point for family, friends and casual, it is necessary to improve and systematize care for users, improving the experience and agility in the provision of services.",
+  "ABOUTINFO2":"For this reason, the implementation of a system that allows the management and administration for CineMintic2022 has been proposed, which incorporates the management of technological tools that improve the experience, control and treatment of information, thus capturing and improving user loyalty.",
+ 
+  "Preguntas Frecuentes": "Frequent Questions",
+  "Click Aquí": "Click here",
+  "¿Por qué es bueno tener mi tarjeta premium CineMintic2022?": "Why is it good to have my CineMintic2022 premium card?", 
+  "¿Que requisitos debo tener para obtener mi tarjeta premium CineMintic2022?": "What requirements must I have to obtain my CineMintic2022 premium card?",
+  "¿Que dias son las funciones?": "What days are the shows?",
+  "¿Que peliculas proyectan?": "What movies are you showing?", 
+  "La tarjeta Premium CineMintic2022 le permite a nuestros usuarios recibir beneficios en nuestros servicios como lo pueden ser entradas a nuestras funciones con precios menores a los vendidos al publico normal, descuentos en la compra de confiteria (sin excepciones de productos, entradas y comida gratis el dia del cumpleaños y otros servicios mas. Para mayor informacion visita nuestra seccion de Tarjeta Premium:": "The Premium CineMintic2022 card allows our users to receive benefits in our services such as tickets to our functions with prices lower than those sold to the normal public, discounts on the purchase of confectionery (without exceptions of products, tickets and free food on birthday and other services. For more information visit our Premium Card section:",
+  "Debes ser mayor de edad (18 años) y realizar la compra de tu tarjeta la cual se enlazara mediante un codigo a tu cuenta y listo podras disfrutar de todos los beneficios que tenemos preparados para ti.": "You must be of legal age (18 years old) and make the purchase of your card which will be linked by means of a code to your account and ready you can enjoy all the benefits that we have prepared for you.",
+  "En nuestro cine manejamos funciones unicas, por lo que las funciones que veas en nuestra pagina seran las unicas que se presentaran. Revisa la sección de cartelera para ver nuestras funciones:": "In our cinema we handle unique functions, so the functions you see on our page will be the only ones that will be presented. Check the billboard section to see our functions:",
+  "Queremos darle lo mejor a nuestros clientes, por lo que proyectamos las mejores peliculas y las mas recientes, con el fin de que nuestros clientes no solamente se sientan satisfechos con nuestros servicios sino tambien con las peliculas que puedan observar. Revisa la seccion de cartelera para ver nuestras funciones:": "We want to give our clients the best, so we project the best and most recent movies, so that our clients not only feel satisfied with our services but also with the movies they can watch. Check the billboard section to see our functions:",
+
+  "PREGUNTAS, QUEJAS O RECLAMOS": "QUESTIONS, COMPLAINTS OR CLAIMS",
+  "PARA NOSOTROS ES MUY IMPORTANTE TU OPINIÓN": "YOUR OPINION IS VERY IMPORTANT TO US",
+  "A continuación digita todos los campos y enviamos tu pregunta, queja o reclamo, te contestaremos lo mas rapido posible y lo tendremos en cuenta en nuestros planes de mejora con el fin de darte siempre el mejor servicio.": "Next, type all the fields and we will send your question, complaint or claim, we will answer you as quickly as possible and we will take it into account in our improvement plans in order to always give you the best service.",
+  "Nombres y Apellidos": "Names and surnames",
+  "Mensaje": "Message",
+  "Enviar": "Send",
+  "Ingrese Email": "Enter Email",
+  "Ingrese Nombres y Apellidos": "Enter Names and Surnames",
+  "Ingrese texto descriptivo": "Enter descriptive text",
+  "Su mensaje se envió de forma exitosa": "Your message was sent successfully",
+
+  "BILLBOARD": "BILLBOARD",
+  "EDAD": "Age",
+  "DURACION": "Duration",
+  "SALA": "Cinema",
+  "PUESTOSDISPONIBLES": "Available Positions",
+  "PUESTOSOCUPADOS": "Occupied positions",
+
+  "PAYMENTS": "PAYMENTS",
+
+  "PasareladePago": "Payment gateway",
+  "Email": "Email",
+  "Nombres": "Names",
+  "Apellidos": "Surnames",
+  "Direccion": "Address",
+  "Departamento": "Department",
+  "ElegirDepartamento": "Choose Department",
+  "Ciudad": "City",
+  "Telefono": "Phone",
+  "InfoPago": "Payment information",
+  "InformacionDePago": "Remember that all your transactions are secure. Choose the method that best suits your needs",
+  "TarjetasCredito": "Credit cards",
+  "Banco": "Bancolombia",
+  "Tarjetas": "You can pay with your credit card, debit card or cash payments. We handle the following means:",
+  "Bancos": "Make your payment directly into our bank account by transfer or consignment. Your order will not be processed until the amount has been received in our account.",
+  "metodoPago": "Metodo De Pago",
+  "RealizarPedido": "Make an order",
+  "RESUMENDETUPEDIDO": "Summary Of Your Order",
+  "numeroProductos": "#Productos",
+  "Informacionpersonal": "Personal information",
+  "Descripciones":"Descriptions",
+  "Cantidad":"Quantity",
+  "Precio":"Price",
+  "Descuento":"Membership Discount",
+
+  "PQRS":"PCCS",
+
+
+  "TARJETA PREMIUM:":"PREMIUM CARD"
+
+}

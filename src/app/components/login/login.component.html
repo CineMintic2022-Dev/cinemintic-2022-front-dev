@@ -1,0 +1,66 @@
+<section class="sectionLogin">
+  <div class="row g-0">
+    <!-- Slider -->
+    <div class="col-5 slider d-flex">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide carouselStyle"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img [src]="movie1" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img [src]="movie2" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img [src]="movie3" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Login -->
+    <div class="col d-flex">
+      <form [formGroup]="userProfileForm" class="formContainer">
+        <div class="boxContainer">
+          <div class="intoFormContainer">
+            <div class="mb-3">
+              <p class="iniciarSesion">INICIAR SESIÓN</p>
+              <input
+                type="email"
+                class="form-control inputs"
+                placeholder="Correo Electrónico"
+                formControlName="email"
+                [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('email')?.errors }"
+              />
+              <div *ngIf="submitted && userProfileForm.get('email')?.errors" class="invalid-feedback">
+                <div *ngIf="userProfileForm.get('email')?.errors?.['required']">El email es requerido</div>
+                <div *ngIf="userProfileForm.get('email')?.errors?.['pattern']">Por favor, ingrese un formato email válido ej: example@gmail.com</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control inputs"
+                placeholder="Contraseña"
+                formControlName="password"
+                [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('password')?.errors }"
+              />
+              <div *ngIf="submitted && userProfileForm.get('password')?.errors" class="invalid-feedback">
+                <div *ngIf="userProfileForm.get('password')?.errors?.['required']">El password es requerido.</div>
+              </div>
+            </div>
+            <div class="text-center pt-3">
+              <button type="submit" class="btn btnEnviar" (click)="login()">Continuar</button>
+            </div>
+          </div>
+          <div class="row pt-4 pb-3 optionsFotterLogin">
+            <a class="col" href="/register">Registrate</a>
+            <a class="col" href="/rememberPassword">Olvide Mi Contraseña</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

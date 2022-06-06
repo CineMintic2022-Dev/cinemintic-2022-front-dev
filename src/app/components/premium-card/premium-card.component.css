@@ -1,0 +1,51 @@
+.background {
+  background-color: #a4161a;
+  height: 60px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  max-height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.titleText {
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0 !important;
+}
+
+p {
+  color: #a4161a;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  text-align: center;
+}
+.contentButton{
+  text-align: center;
+  align-items: center;
+}
+.btn{
+  background-color: #a4161a;
+  color: white;
+  align-items: center;  
+  border: 0 !important;
+}
+.btn:hover{
+  background-color: #E5383B ;
+  color: white;
+  align-items: center;  
+  border: 0 !important;
+}
+.contImg{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}

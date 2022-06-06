@@ -1,0 +1,20 @@
+<div>
+  <div  *ngFor="let  combo of combosOut; let i = index" class="combosContainer">
+    <div class="card comboCard" style="max-width: 35rem">
+      <div class="row g-0">
+
+        <div class="col-md-4 posterContainer">
+          <img src="{{ imgCombo }}" class="poster" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="movieTitle titulos">{{ combo.name }}</div>
+          <div class=""><span class="subtitulos">Descripcion : </span>{{ combo.description }}</div>
+          <div class=""><span class="subtitulos">Precio : </span>{{ combo.price }}</div>
+          <div class="btn_content">
+          <a href="/payment" class="btn btnComprar"> {{ "Comprar" | translate }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    

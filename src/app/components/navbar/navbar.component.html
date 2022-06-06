@@ -1,0 +1,109 @@
+<nav class="navbar navbar-expand-lg navbar-light navbarBg">
+  <div class="container-fluid">
+    <a class="navbar-brand row imgs" href="#">
+      <a class="col iconCineMintic"><img [src]="iconCineMintic" /></a>
+      <a class="col textCineMintic"><img [src]="textCineMintic" /></a>
+    </a>
+    <!-- Boton para el responsive -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Opciones -->
+    <div
+      class="collapse navbar-collapse optionsNavbar"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuOptions">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/billboard">{{
+            "Cartelera" | translate
+          }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/combos">{{
+            "Confiteria" | translate
+          }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/premiumCard">{{
+            "TarjetaPremium" | translate
+          }}</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ "Idioma" | translate }}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" (click)="spanish()">{{
+                "Espanol" | translate
+              }}</a>
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="english()">{{
+                "Ingles" | translate
+              }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Parte Derecha -->
+      <form class="d-flex me-5">
+        <!-- Usuario -->
+        <div class="dropdown">
+          <a
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img [src]="iconUser" class="optionsImgs"/>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li>
+              <a
+                [hidden]="!userOn"
+                class="dropdown-item dropdownUser"
+                href="/profile"
+                >{{ "Perfil" | translate }}</a
+              >
+            </li>
+            <li [hidden]="!userOn">
+              <a
+                class="dropdown-item dropdownUser"
+                (click)="logout()"
+                href=""
+                >{{ "CerrarSesion" | translate }}</a
+              >
+            </li>
+            <li [hidden]="userOn">
+              <a class="dropdown-item dropdownUser" href="/login">{{
+                "IniciarSesion" | translate
+              }}</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Carrito -->
+        <a href="/payment" class="ms-3">
+          <img [src]="iconCarrito" class="optionsImgs" />
+        </a>
+      </form>
+    </div>
+  </div>
+</nav>

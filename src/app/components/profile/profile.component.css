@@ -1,0 +1,106 @@
+
+  .sectionProfile {
+    background-image: url("/assets/img/icons/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  img {
+    max-width: 250px;
+  }
+  
+  .slider {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carouselStyle {
+    padding: 5% 15%;
+  }
+  
+  .formContainer {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 auto;
+  
+  }
+  
+  .boxContainer {
+    padding: 10px 50px;
+    background-color: #c4c4c488;
+    border-radius: 5%;
+  }
+  
+  .intoFormContainer{
+    width: 320px;
+  }
+  
+  .iniciarSesion{
+    text-align: center;
+    color: #A4161A;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .inputs{
+    background-color: #DFDDDD;
+  }
+  
+  .inputs:hover, .inputs:focus{
+    border: 0;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .btnEnviar{
+    background-color: #BA181B;
+    color: white;
+    font-weight: 600;
+    width:120px;
+  }
+  
+  .btnEnviar:hover{
+    background-color: #A4161A;
+    color: white;
+  }
+  
+  .optionsFotterLogin{
+    text-align: center;
+  }
+  
+  .optionsFotterLogin a {
+    color:white;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .optionsFotterLogin a:hover {
+    color:#B6BABE;
+  }
+
+  .background{
+    background-color: #A4161A;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.invalid-feedback {
+  color: #DFDDDD;
+}
+
+.imguser{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.imguser img{
+  width: 100px;
+}

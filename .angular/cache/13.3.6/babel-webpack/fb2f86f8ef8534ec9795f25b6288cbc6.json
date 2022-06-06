@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  ApiUrl: 'https://cinemintic2022-prod.herokuapp.com',\n  AppUrl: 'https://cinemintic2022-front-final.herokuapp.com'\n};","map":null,"metadata":{},"sourceType":"module"}

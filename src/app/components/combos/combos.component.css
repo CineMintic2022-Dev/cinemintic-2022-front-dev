@@ -1,0 +1,67 @@
+.combosContainer {
+    padding: 30px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .posterContainer{
+    text-align: center;
+  }
+
+  .btnComprar {
+    text-align: center;
+    align-items: center;
+    background-color: #14ae5c;
+    color: white;
+    font-size: 13px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    display: block;
+  }
+
+  .btnComprar:hover {
+    color: white;
+  }
+
+  .btnAgregarCarrito {
+    text-align: center;
+    align-items: center;
+    background-color: #ba181b;
+    color: white;
+    font-size: 13px;
+    border-radius: 15px;
+    text-transform: uppercase;
+  }
+
+  .comboCard{
+    padding: 20px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    background:#dcdcdc;
+  }
+
+  .combosContainer {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .subtitulos{
+    color: #ba181b;
+    font-weight: bold;
+  }
+
+  .titulos{
+    color: #ba181b;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .btn_content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

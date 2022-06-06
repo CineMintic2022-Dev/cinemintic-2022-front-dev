@@ -1,0 +1,88 @@
+<div
+  id="carouselExampleSlidesOnly"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img [src]="banner1" class="d-block w-100" height="400" alt="..." />
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img [src]="banner2" class="d-block w-100" height="400" alt="..." />
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img [src]="banner3" class="d-block w-100" height="400" alt="..." />
+    </div>
+  </div>
+</div>
+
+<!-- Title About -->
+<div class="background">
+  <p class="titleText">{{ "ACERCA DE" | translate }}</p>
+</div>
+
+<div class="aboutContent">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="aboutText">{{ "ABOUTINFO1" | translate }}</p>
+    </div>
+    <div class="col">
+      <img [src]="foto1" alt="foto" />
+    </div>
+  </div>
+
+  <div class="row pt-5">
+    <div class="col">
+      <img [src]="foto2" alt="foto" />
+    </div>
+    <div class="col-md-6">
+      <p class="aboutText">{{ "ABOUTINFO2" | translate }}</p>
+    </div>
+  </div>
+
+  <div class="row section-container our-team" id="team-section">
+    <h1 class="text-center pb-3">NUESTRO EQUIPO</h1>
+    <div class="col container_item-user text-center">
+      <img [src]="Pablo" />
+      <div class="my-5">
+        <h3>Pablo</h3>
+        <label>Desarrollador</label>
+      </div>
+    </div>
+    <div class="col container_item-user text-center">
+      <img [src]="esteban" />
+      <div class="my-5">
+        <h3>Esteban</h3>
+        <label>Desarrollador</label>
+      </div>
+    </div>
+    <div class="col container_item-user text-center">
+      <img [src]="juanes" />
+      <div class="my-5">
+        <h3>Juan Esteban</h3>
+        <label>Desarrollador</label>
+      </div>
+    </div>
+    <div class="col container_item-user text-center">
+      <img [src]="johan" />
+      <div class="my-5">
+        <h3>Johan</h3>
+        <label>Desarrollador</label>
+      </div>
+    </div>
+    <div class="col container_item-user text-center">
+      <img [src]="jorge" />
+      <div class="my-5">
+        <h3>Jorge Eliecer</h3>
+        <label>Desarrollador</label>
+      </div>
+    </div>
+    <div class="col container_item-user text-center">
+      <img [src]="camilo" />
+      <div class="my-5">
+        <h3>Camilo</h3>
+        <label>Desarrollador</label>
+      </div>
+    </div>
+  </div>
+</div>

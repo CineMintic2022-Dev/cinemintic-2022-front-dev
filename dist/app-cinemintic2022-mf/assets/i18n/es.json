@@ -1,0 +1,98 @@
+{
+  "NAVBAR": "NAVBAR",
+
+  "Idioma": "Idioma",
+  "Espanol": "Españól",
+  "Ingles": "Ingles",
+  "Cartelera": "Cartelera",
+  "Proximamente": "Próximamente",
+  "Confiteria": "Confiteria",
+  "TarjetaPremium": "Tarjeta Premium",
+  "Perfil": "Perfil",
+  "CerrarSesion": "Cerrar Sesión",
+  "Company": "Compañia",
+  "ParaTi": "Para ti",
+
+  "FOOTER": "FOOTER",
+
+  "SobreNosotros": "Sobre Nosotros",
+  "QuienesSomos": "Quienes Somos",
+  "PreguntasFrecuentes": "Preguntas Frecuentes",
+  "NuestrasRedes": "Nuestras Redes",
+
+  "HOME PAGE": "HOME PAGE",
+
+  "CARTELERA": "CARTELERA",
+  "ESTRENOS": "ESTRENOS",
+  "RESERVAR": "RESERVAR",
+  "PROXIMAMENTE": "PROXIMAMENTE",
+
+  "ACERCA DE": "QUIENES SOMOS",
+  "ABOUTINFO1": "La industria del entretenimiento en los últimos años ha tenido un desarrollo acelerado, los avances de la ciencia y la tecnología han dado una base sólida para muchos campos entre ellos las bellas artes se hayan masificado en todos los estratos sociales. Dado que lugares como los cines por su gran difusión y afluencia se ha convertido en el punto de encuentro entre familiares, amigos y casuales, es necesario mejorar y sistematizar la atención de usuarios mejorando la experiencia y agilidad en la prestación de servicios.",
+
+  
+  
+  "Preguntas Frecuentes": "Preguntas Frecuentes",
+  "Click Aquí": "Click Aquí",
+  "¿Por qué es bueno tener mi tarjeta premium CineMintic2022?": "¿Por qué es bueno tener mi tarjeta premium CineMintic2022?", 
+  "¿Que requisitos debo tener para obtener mi tarjeta premium CineMintic2022?": "¿Que requisitos debo tener para obtener mi tarjeta premium CineMintic2022?",
+  "¿Que dias son las funciones?": "¿Que dias son las funciones?",
+  "¿Que peliculas proyectan?": "¿Que peliculas proyectan?",
+  "La tarjeta Premium CineMintic2022 le permite a nuestros usuarios recibir beneficios en nuestros servicios como lo pueden ser entradas a nuestras funciones con precios menores a los vendidos al publico normal, descuentos en la compra de confiteria (sin excepciones de productos, entradas y comida gratis el dia del cumpleaños y otros servicios mas. Para mayor informacion visita nuestra seccion de Tarjeta Premium:": "La tarjeta Premium CineMintic2022 le permite a nuestros usuarios recibir beneficios en nuestros servicios como lo pueden ser entradas a nuestras funciones con precios menores a los vendidos al publico normal, descuentos en la compra de confiteria (sin excepciones de productos, entradas y comida gratis el dia del cumpleaños y otros servicios mas. Para mayor informacion visita nuestra seccion de Tarjeta Premium:",
+  "Debes ser mayor de edad (18 años) y realizar la compra de tu tarjeta la cual se enlazara mediante un codigo a tu cuenta y listo podras disfrutar de todos los beneficios que tenemos preparados para ti.": "Debes ser mayor de edad (18 años) y realizar la compra de tu tarjeta la cual se enlazara mediante un codigo a tu cuenta y listo podras disfrutar de todos los beneficios que tenemos preparados para ti.",
+  "En nuestro cine manejamos funciones unicas, por lo que las funciones que veas en nuestra pagina seran las unicas que se presentaran. Revisa la sección de cartelera para ver nuestras funciones:": "En nuestro cine manejamos funciones unicas, por lo que las funciones que veas en nuestra pagina seran las unicas que se presentaran. Revisa la sección de cartelera para ver nuestras funciones:",
+  "Queremos darle lo mejor a nuestros clientes, por lo que proyectamos las mejores peliculas y las mas recientes, con el fin de que nuestros clientes no solamente se sientan satisfechos con nuestros servicios sino tambien con las peliculas que puedan observar. Revisa la seccion de cartelera para ver nuestras funciones:": "Queremos darle lo mejor a nuestros clientes, por lo que proyectamos las mejores peliculas y las mas recientes, con el fin de que nuestros clientes no solamente se sientan satisfechos con nuestros servicios sino tambien con las peliculas que puedan observar. Revisa la seccion de cartelera para ver nuestras funciones:",
+
+  "PREGUNTAS, QUEJAS O RECLAMOS": "PREGUNTAS, QUEJAS O RECLAMOS",
+  "PARA NOSOTROS ES MUY IMPORTANTE TU OPINIÓN": "PARA NOSOTROS ES MUY IMPORTANTE TU OPINIÓN",
+  "A continuación digita todos los campos y enviamos tu pregunta, queja o reclamo, te contestaremos lo mas rapido posible y lo tendremos en cuenta en nuestros planes de mejora con el fin de darte siempre el mejor servicio.": "A continuación digita todos los campos y enviamos tu pregunta, queja o reclamo, te contestaremos lo mas rapido posible y lo tendremos en cuenta en nuestros planes de mejora con el fin de darte siempre el mejor servicio.",
+  "Nombres y Apellidos": "Nombres y Apellidos",
+  "Mensaje": "Mensaje",
+  "Enviar": "Enviar",
+  "Ingrese Email": "Ingrese Email",
+  "Ingrese Nombres y Apellidos": "Ingrese Nombres y Apellidos",
+  "Ingrese texto descriptivo": "Ingrese texto descriptivo",
+  "Su mensaje se envió de forma exitosa": "Su mensaje se envió de forma exitosa",
+
+  "BILLBOARD": "BILLBOARD",
+  "EDAD": "Edad",
+  "DURACION": "Duraciòn",
+  "SALA": "Sala",
+  "PUESTOSDISPONIBLES": "Puestos Disponibles",
+  "PUESTOSOCUPADOS": "Puestos Ocupados",
+
+  
+
+  "PAYMENTS": "PAYMENTS",
+
+  "PasareladePago": "Pasarela de Pago",
+  "Email": "Correo",
+  "Nombres": "Nombres",
+  "Apellidos": "Apellidos",
+  "Direccion": "Dirección",
+  "Departamento": "Departamento",
+  "ElegirDepartamento": "Elegir Departamento",
+  "Ciudad": "Ciudad",
+  "Telefono": "Telefono",
+  "InfoPago": "Información De Pago",
+  "InformacionDePago": "Recuerda que todas tus transacciones son seguras. Escoge el metodo que mejor se adapte a tu necesidad",
+  "TarjetasCredito": "Tarjetas De Credito",
+  "Banco": "Bancolombia",
+  "Tarjetas": "Puedes pagar con tu tarjeta de crédito, débito o pagos en efectivo. Manejamos los siguientes medios :",
+  "Bancos": "Realiza tu pago directamente en nuestra cuenta bancaria por transferencia o consignación Tu pedido no se procesará hasta que se haya recibido el importe en nuestra cuenta.",
+  "metodoPago": "Metodo De Pago",
+  "Transferencia": "Transferencia",
+  "RealizarPedido": "Realizar Pedido",
+  "RESUMENDETUPEDIDO": "Resumen De Tu Pedido",
+  "numeroProductos": "#Productos",
+  "MetododePago": "Metodo De Pago",
+  "Informacionpersonal": "Informacion personal",
+  "Descripciones":"Descripciones",
+  "Cantidad":"Cantidad",
+  "Precio":"Precio",
+  "Descuento":"Descuento Membresia",
+
+  "PQRS":"PQRS",
+  
+  "TARJETA PREMIUM:":"TARJETA PREMIUM"
+}

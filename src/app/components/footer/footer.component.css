@@ -1,0 +1,40 @@
+a {
+  font-weight: 600;
+  color: #b6babe !important;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+h6 {
+  color: white !important;
+}
+
+/* Class */
+.footerBg {
+  background-color: #495057 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.iconCineMintic img {
+  max-width: 160px;
+}
+
+.textCineMintic img {
+  max-width: 200px;
+}
+
+.socialNetwork .col img {
+  max-width: 40px;
+}
+
+.imgs {
+  text-align: center;
+  align-items: center;
+}

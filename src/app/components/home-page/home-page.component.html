@@ -1,0 +1,65 @@
+<div>
+  <!-- Slider movies -->
+  <div
+    id="carouselExampleSlidesOnly"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img [src]="banner1" class="d-block w-100" height="400" alt="..." />
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img [src]="banner2" class="d-block w-100" height="400" alt="..." />
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img [src]="banner3" class="d-block w-100" height="400" alt="..." />
+      </div>
+    </div>
+  </div>
+  <!-- Title Billboard  -->
+  <div class="background">
+    <p class="titleText">{{ "CARTELERA" | translate }}</p>
+  </div>
+
+  <!-- Billboard -->
+  <div class="billboardContainer">
+    <!-- Movie 1 -->
+    <div
+      class="billboardCardContainer"
+      *ngFor="let films of movies; let i = index"
+    >
+      <div class="card billboardCard" style="max-width: 14rem">
+        <div class="card-header movieTitle">{{ films.name }}</div>
+        <div class="card-body imageMovieContainer">
+          <img src="{{ films.image }}" class="d-block w-100" alt="..." />
+        </div>
+        <a class="card-footer reserveBtn" href="/payment">
+          {{ "RESERVAR" | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Billboard Content -->
+  <!-- Title Premiere -->
+  <div class="background">
+    <p class="titleText">{{ "ESTRENOS" | translate }}</p>
+  </div>
+  <!-- Billboard -->
+  <div class="billboardContainer">
+    <!-- Movie 1 -->
+    <div
+      class="billboardCardContainer"
+      *ngFor="let films of premieres; let i = index"
+    >
+      <div class="card billboardCard" style="max-width: 14rem">
+        <div class="card-header movieTitle">{{ films.name }}</div>
+        <div class="card-body imageMovieContainer">
+          <img src="{{ films.image }}" class="d-block w-100" alt="..." />
+        </div>
+        <div class="card-footer soonBtn">{{ "PROXIMAMENTE" | translate }}</div>
+      </div>
+    </div>
+  </div>
+</div>

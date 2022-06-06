@@ -1,0 +1,247 @@
+<div>
+  <!-- Payment -->
+  <div class="enviosContainer">
+    <div class="row imageText">
+      <div class="col-md-6">
+        <p class="title-section">{{ "PasareladePago" | translate }}</p>
+        <p class="subtitlePayment">{{ "Informacionpersonal" | translate }}</p>
+        <form [formGroup]="userProfileForm" (ngSubmit)="submit()">
+          <div class="form-group">
+            <label for="correo">{{ "Email" | translate }}</label>
+            <input
+              type="text"
+              class="form-control"
+              id="correo"
+              name="correo"
+              autocomplete="off"
+              formControlName="email"
+            />
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nombres">{{ "Nombres" | translate }}</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="nombres"
+                autocomplete="off"
+                formControlName="name"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="apellidos">{{ "Apellidos" | translate }}</label>
+              <input
+                type="text"
+                class="form-control"
+                id="apellidos"
+                name="apellidos"
+                autocomplete="off"
+                formControlName="lastName"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="direccion1">{{ "Direccion" | translate }}</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion1"
+              placeholder="Cra 12 #64-158"
+              name="direccion1"
+              autocomplete="off"
+              formControlName="address"
+            />
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="departamento">{{ "Departamento" | translate }}</label>
+              <select
+                id="departamento"
+                class="form-control"
+                name="departamento"
+              >
+                <option selected disabled>
+                  {{ "ElegirDepartamento" | translate }}
+                </option>
+                <option>Tolima</option>
+                <option>Caldas</option>
+                <option>Antioquia</option>
+                <option>Risaralda</option>
+                <option>Boyacá</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="ciudad">{{ "Ciudad" | translate }}</label>
+              <input
+                type="text"
+                class="form-control"
+                name="ciudad"
+                id="ciudad"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telefono">{{ "Telefono" | translate }}</label>
+            <input
+              type="text"
+              class="form-control"
+              name="telefono"
+              id="telefono"
+              autocomplete="off"
+              formControlName="phone"
+            />
+          </div>
+        </form>
+
+        <p class="title-section pt-4">{{ "InfoPago" | translate }}</p>
+        <p class="text-style">
+          {{ "InformacionDePago" | translate }}
+        </p>
+        <div class="accordion col-md-13" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                {{ "TarjetasCredito" | translate }}
+                <img [src]="imgMercadoPago" class="card-img-center" alt="" />
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  {{ "Tarjetas" | translate }}
+                </p>
+                <ul>
+                  <li>Visa</li>
+                  <li>MasterCard</li>
+                  <li>PSE</li>
+                  <li>Efecty</li>
+                  <li>Baloto</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                {{ "Banco" | translate }}
+                <img [src]="imgTransferencia" class="card-img-banco" alt="" />
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  {{ "Bancos" | translate }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <p class="title-section">{{ "metodoPago" | translate }}</p>
+        <div class="metodo-pago">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="Mercado Pago"
+            />
+            <label class="form-check-label" for="inlineRadio1"
+              >Mercado Pago</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="Transferencia"
+            />
+            <label class="form-check-label" for="inlineRadio2">{{
+              "Transferencia" | translate
+            }}</label>
+          </div>
+        </div>
+        <div class="vermas">
+          <button type="submit" class="btn botonvermas" (click)="submit()">
+            {{ "RealizarPedido" | translate }}
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="resumen-pago">
+          <p class="title-section">{{ "RESUMENDETUPEDIDO" | translate }}</p>
+          <div class="card border-dark mb-3 card-pedido">
+            <div class="card-header">
+              <div class="card-body text-dark">
+                <!-- Headers -->
+                <div class="gridPayment headersSummary">
+                  <p>{{ "Descripciones" | translate }}</p>
+                  <p class="text-center">{{ "Cantidad" | translate }}</p>
+                  <p>{{ "Precio" | translate }}</p>
+                </div>
+                <!-- Productos -->
+                <div class="gridPayment infoSummary">
+                  <p>Combo 3</p>
+                  <p class="text-center">1</p>
+                  <p>$65000</p>
+                </div>
+                <hr />
+                <!-- Descuentos -->
+                <div class="row">
+                  <div class="col-md-8 headersSummary">
+                    <p>Subtotal</p>
+                    <p>{{ "Descuento" | translate }}</p>
+                  </div>
+                  <div class="col-md-4 text-end infoSummary">
+                    <p>$100000</p>
+                    <p>$15000</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-md-8 headersSummary">
+                    <p>Total</p>
+                  </div>
+                  <div class="col-md-4 text-end infoSummary">
+                    <p>$100000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

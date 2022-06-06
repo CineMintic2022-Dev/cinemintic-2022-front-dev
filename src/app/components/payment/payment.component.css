@@ -1,0 +1,138 @@
+/* Carousel */
+
+/* Payment */
+.enviosContainer {
+  margin: 50px 7vw 50px 7vw;
+}
+
+.nav-middle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.568);
+}
+
+.separatorSabiasQue {
+  padding-bottom: 20px;
+}
+
+.nav-middle-text {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.imageText {
+  padding-bottom: 20px;
+}
+
+.title-section {
+  color: #ba181b;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.subtitlePayment {
+  color: #ba181b;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-style {
+  color: #000000;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.envio-link {
+  color: #000000;
+  font-weight: bold;
+}
+.card-img-center {
+  width: 75px;
+  height: 60px;
+  padding-left: 10px;
+}
+.card-img-banco {
+  width: 100px;
+  height: 70px;
+  padding-left: 10px;
+}
+.metodo-pago {
+  display: flex;
+  justify-content: center;
+}
+.vermas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.botonvermas {
+  width: 200px;
+  background-color: #ba181b;
+  color: white;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
+  font-size: 15px;
+}
+
+.botonvermas:hover {
+  color: white;
+  background-color: #660708;
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.35);
+}
+
+.resumen-pago {
+  display: grid;
+  justify-content: center;
+}
+.card-pedido {
+}
+.input-resumen {
+  height: 30px;
+  align-content: center;
+}
+
+.seccionElementos {
+  width: 20rem;
+  text-align: center;
+  padding-left: 15%;
+}
+
+.botonCarrito {
+  background-color: #f78ecf;
+}
+
+.botonCarrito:hover {
+  background-color: #fbbcee;
+  color: white;
+}
+
+.botonCarrito2 {
+  background-color: #e0cefd;
+}
+
+.gridPayment {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-gap: 20px;
+}
+
+.headersSummary{
+  color: #ba181b;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.infoSummary{
+  color: #6C757D;
+  font-size: 18px;
+  font-weight: 600;
+}

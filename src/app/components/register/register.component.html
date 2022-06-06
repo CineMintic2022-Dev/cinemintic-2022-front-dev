@@ -1,0 +1,140 @@
+
+<section class="sectionRegister">
+    <div class="row g-0">
+      <div class="col d-flex">
+        <form [formGroup]="userRegisterForm" (ngSubmit)="onRegister()" class="formContainer">
+          <div class="boxContainer">
+            <div class="intoFormContainer">
+                <div class="mb-3">
+                    <div class="background pb-4">
+                        <h1 class="titleText">REGISTRATE</h1>
+                    </div>
+
+                    <input
+                      type="text"
+                      class="form-control inputs"
+                      placeholder="Nombres"
+                      id="name"
+                      formControlName="name" 
+                      [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['name'].errors }"
+                    />
+                    <div *ngIf="submitted && userRegisterForm.controls['name'].errors" class="invalid-feedback">
+                      <div *ngIf="userRegisterForm.controls['name'].errors['required']">Los nombres son requeridos</div>
+                    </div>
+                </div>
+                    <div class="mb-3">
+                        <input
+                          type="text"
+                          class="form-control inputs"
+                          placeholder="Apellidos"
+                          formControlName="lastName"
+                          [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['lastName'].errors }"
+                        />
+                        <div *ngIf="submitted && userRegisterForm.controls['lastName'].errors" class="invalid-feedback">
+                          <div *ngIf="userRegisterForm.controls['lastName'].errors['required']">Los apellidos son requeridos</div>
+                        </div>
+                    </div>
+
+                <div class="mb-3">
+                  <select  [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['genre'].errors}" class="form-control selectColor" 
+                            id="genre" required formControlName="genre" >
+                    <option value="" disabled>Seleccione un genero</option>
+                    <option *ngFor="let genero of generos" [value]="genero">{{genero}}</option>
+                  </select>
+                  <div *ngIf="submitted && userRegisterForm.controls['genre'].errors" class="invalid-feedback">
+                    <div *ngIf="userRegisterForm.controls['genre'].errors['required']">El genero es requerido</div>
+                  </div>
+                </div>
+
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control inputs"
+                  placeholder="Email"
+                  formControlName="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
+                  [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['email'].errors }"
+                />
+                <div *ngIf="submitted && userRegisterForm.controls['email'].errors" class="invalid-feedback">
+                  <div *ngIf="userRegisterForm.controls['email'].errors['required']">El email es requerido</div>
+                  <div *ngIf="userRegisterForm.controls['email'].errors && userRegisterForm.controls['email'].errors['email']">Por favor, ingrese un formato email válido</div>
+                  <div *ngIf="userRegisterForm.controls['email'].errors['pattern']">El email no presenta un formato válido ej: mail@mail.com</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control inputs"
+                  placeholder="Dirección"
+                  formControlName="address"
+                  [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['address'].errors }"
+                />
+                <div *ngIf="submitted && userRegisterForm.controls['address'].errors" class="invalid-feedback">
+                  <div *ngIf="userRegisterForm.controls['address'].errors['required']">La dirección es requerida</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control inputs"
+                  placeholder="Teléfono"
+                  formControlName="phone"
+                  [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['phone'].errors }"
+                />
+                <div *ngIf="submitted && userRegisterForm.controls['phone'].errors" class="invalid-feedback">
+                  <div *ngIf="userRegisterForm.controls['phone'].errors['required']">El teléfono es requerido.</div>
+                  <div *ngIf="userRegisterForm.controls['phone'].errors['minlength']">El telefono debe tener mínimo de 7 caracteres.</div>
+                </div>
+            </div>
+
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control inputs"
+                  id="password"
+                  placeholder="Password"
+                  formControlName="password"
+                  [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['password'].errors }"
+                />
+                <div *ngIf="submitted && userRegisterForm.controls['password'].errors" class="invalid-feedback">
+                  <div *ngIf="userRegisterForm.controls['password'].errors['required']">El password es requerido.</div>
+                  <div *ngIf="userRegisterForm.controls['password'].errors && userRegisterForm.controls['password'].errors['minlength']"> El password debe tener mínimo de 6 caracteres.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  id="confirmpassword"
+                  class="form-control inputs"
+                  placeholder="Confirmar Password"
+                  formControlName="confirmpassword"
+                  [ngClass]="{ 'is-invalid': submitted && userRegisterForm.controls['confirmpassword'].errors }"
+                />
+                <div *ngIf="submitted && userRegisterForm.controls['confirmpassword'].errors" class="invalid-feedback">
+                  <div *ngIf="userRegisterForm.controls['confirmpassword'].errors['required']">La confirmacion de password es requerida.</div>
+                  <div *ngIf="userRegisterForm.controls['confirmpassword'].errors && userRegisterForm.controls['confirmpassword'].errors['minlength']"> La confirmación debe tener mínimo de 6 caracteres.</div>
+                  <div *ngIf="userRegisterForm.controls['confirmpassword'].errors['mustMatch']">El password y confirmación no coinciden</div>
+                </div>
+              </div>
+
+
+              <div *ngIf="submitted && errorServer" class="invalid-servicio">
+                <div *ngIf="errorServer">{{errorServer.mensaje}}</div>
+              </div>
+
+              <div class="text-center pt-3 pb-2">
+                <button type="submit" class="btn btnEnviar" [disabled]="loading">
+                  <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                  Registrar
+                </button>
+              </div>        
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+

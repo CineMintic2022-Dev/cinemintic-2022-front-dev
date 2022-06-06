@@ -1,0 +1,106 @@
+<section class="sectionProfile">
+  <div class="row g-0">
+    <div class="col d-flex">
+      <form [formGroup]="userProfileForm" (ngSubmit)="onUpdate()" class="formContainer">
+        <div class="boxContainer">
+          <div class="imguser">
+            <img class="rounded-circle mt-4" [src]="iconUser">
+          </div>
+          <div class="intoFormContainer">
+            <fieldset disabled>
+            <div class="mb-3" [hidden]="true">
+              <label class="labels">Id</label>
+                <input
+                  type="text"
+                  class="form-control inputs"
+                  placeholder="Id"
+                  formControlName="id"
+                  [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('id')?.errors}"
+                />
+                <div *ngIf="submitted && userProfileForm.get('id')?.errors" class="invalid-feedback">
+                  <div *ngIf="userProfileForm.get('id')?.errors?.['required']">El id es requeridos</div>
+                </div>
+            </div>
+          </fieldset>
+              <div class="mb-3">
+                <label class="labels">Name</label>
+                  <input
+                    type="text"
+                    class="form-control inputs"
+                    placeholder="Nombres"
+                    id="name"
+                    formControlName="name" 
+                    [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('name')?.errors }"
+                  />
+                  <div *ngIf="submitted && userProfileForm.get('name')?.errors" class="invalid-feedback">
+                    <div *ngIf="userProfileForm.get('name')?.errors?.['required']">Los nombres son requeridos</div>
+                  </div>
+              </div>
+                  <div class="mb-3">
+                    <label class="labels">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control inputs"
+                        placeholder="Apellidos"
+                        formControlName="lastName"
+                        [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('lastName')?.errors }"
+                      />
+                      <div *ngIf="submitted && userProfileForm.get('lastName')?.errors" class="invalid-feedback">
+                        <div *ngIf="userProfileForm.get('lastName')?.errors?.['required']">Los apellidos son requeridos</div>
+                      </div>
+                  </div>
+            <div class="mb-3">
+              <label class="labels">Email</label>
+              <input
+                type="email"
+                class="form-control inputs"
+                placeholder="Email"
+                formControlName="email"
+                [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('email')?.errors }"
+              />
+              <div *ngIf="submitted && userProfileForm.get('email')?.errors" class="invalid-feedback">
+                <div *ngIf="userProfileForm.get('email')?.errors?.['required']">El email es requerido</div>
+                <div *ngIf="userProfileForm.get('email')?.errors?.['pattern']">Por favor, ingrese un formato email válido ej: example@gmail.com</div>
+              </div>
+            </div>
+          <div class="mb-3">
+            <label class="labels">Address</label>
+              <input
+                type="text"
+                class="form-control inputs"
+                placeholder="Address"
+                formControlName="address"
+                [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('address')?.errors }"
+              />
+              <div *ngIf="submitted && userProfileForm.get('address')?.errors" class="invalid-feedback">
+                <div *ngIf="userProfileForm.get('address')?.errors?.['required']">La direccion es requerida</div>
+              </div>
+          </div>
+
+            <div class="mb-3">
+              <label class="labels">Phone</label>
+              <input
+                type="text"
+                class="form-control inputs"
+                id="phone"
+                placeholder="Phone"
+                formControlName="phone"
+                [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('phone')?.errors }"
+              />
+              <div *ngIf="submitted && userProfileForm.get('phone')?.errors" class="invalid-feedback">
+                <div *ngIf="userProfileForm.get('phone')?.errors?.['required']">El telefono es requerido.</div>
+                <div *ngIf="userProfileForm.get('phone')?.errors?.['minlength']"> El telefono debe tener mínimo de 7 caracteres.</div>
+              </div>
+            </div>
+            <div class="text-center pt-3">
+              <button type="submit" class="btn btnEnviar">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                Actualizar
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

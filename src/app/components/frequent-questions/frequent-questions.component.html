@@ -1,0 +1,83 @@
+<div>
+    <!-- Slider movies -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img [src]='banner1' class="d-block w-100" height="400" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img [src]='banner2' class="d-block w-100" height="400" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img [src]='banner3' class="d-block w-100" height="400" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+<!-- Preguntas frecuentes Title-->
+<div class="background">
+    <p class="titleText">{{ "Preguntas Frecuentes" | translate }}</p>
+</div>
+
+<br>
+<br>
+
+<!-- Preguntas frecuentes Content -->
+<!-- Title Por que es bueno tener... -->
+<ul>
+    <li class="lista">
+        <div class="backgroundGrey">
+            <p class="titleText2">{{ "¿Por qué es bueno tener mi tarjeta premium CineMintic2022?" | translate }}</p>
+            <p class="contentText">{{ "La tarjeta Premium CineMintic2022 le permite a nuestros usuarios recibir beneficios en nuestros servicios como lo pueden ser entradas a nuestras funciones con precios menores a los vendidos al publico normal, descuentos en la compra de confiteria (sin excepciones de productos, entradas y comida gratis el dia del cumpleaños y otros servicios mas. Para mayor informacion visita nuestra seccion de Tarjeta Premium:" | translate }}</p>
+            <br>            
+            <a href="/premiumCard" >
+
+                <button class="buttonClick"> {{ "Click Aquí" | translate }}</button>
+            </a>
+            <br>
+         </div>
+    </li>
+
+    <br>
+
+    <li class="lista">
+        <div class="backgroundGrey">
+            <p class="titleText2">{{ "¿Que requisitos debo tener para obtener mi tarjeta premium CineMintic2022?" | translate }}</p>
+            <p class="contentText">{{ "Debes ser mayor de edad (18 años) y realizar la compra de tu tarjeta la cual se enlazara mediante un codigo a tu cuenta y listo podras disfrutar de todos los beneficios que tenemos preparados para ti." | translate }}</p>           
+            
+            <br>
+        </div>
+    </li>
+
+    <br>
+    
+    <li class="lista">
+        <div class="backgroundGrey">
+            <p class="titleText2">{{ "¿Que dias son las funciones?" | translate }}</p>
+            <p class="contentText">{{ "En nuestro cine manejamos funciones unicas, por lo que las funciones que veas en nuestra pagina seran las unicas que se presentaran. Revisa la sección de cartelera para ver nuestras funciones:" | translate }}</p>
+            <br>     
+            <a href="/billboard">      
+                <button class="buttonClick"> {{ "Click Aquí" | translate }}</button>
+            </a>       
+            <br>
+        </div>
+    </li>
+
+    <br>
+
+    <li class="lista">
+        <div class="backgroundGrey">
+            <p class="titleText2">{{ "¿Que peliculas proyectan?" | translate }}</p>
+            <p class="contentText">{{ "Queremos darle lo mejor a nuestros clientes, por lo que proyectamos las mejores peliculas y las mas recientes, con el fin de que nuestros clientes no solamente se sientan satisfechos con nuestros servicios sino tambien con las peliculas que puedan observar. Revisa la seccion de cartelera para ver nuestras funciones:" | translate }}</p>
+            <br>     
+            <a href="/billboard">
+                <button class="buttonClick"> {{ "Click Aquí" | translate }}</button>
+            </a>       
+            <br>
+        </div>
+    </li>
+</ul>
+
+<br>
+<br>
