@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "npx jest",
     "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
+    "postinstall": "ng build --prod",
     "heroku-postbuild": "ng build --prod"
   },"engines": {
     "node": "14.16.1",
