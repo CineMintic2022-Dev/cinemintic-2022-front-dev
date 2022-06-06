@@ -11,7 +11,8 @@
     "postinstall": "ng build --prod",
     "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
     "heroku-postbuild": "ng build --prod"
-  },"engines": {
+  },
+  "engines": {
     "node": "14.16.1",
     "npm": "6.14.12 "
   },
@@ -34,8 +35,8 @@
     "sweetalert2": "^11.4.14",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4",
-    "express":"*",
-    "body-parser":"*" 
+    "express": "*",
+    "body-parser": "*"
   },
   "devDependencies": {
     "@angular-builders/jest": "latest",
