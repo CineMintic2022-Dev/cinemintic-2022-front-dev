@@ -1,0 +1,1 @@
+# cinemintic-2022-front-dev
